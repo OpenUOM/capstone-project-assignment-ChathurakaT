@@ -3,13 +3,13 @@ import { HttpClient } from '@angular/common/http';
 import { environment } from './../environments/environment';
 
 @Injectable({
-  providedIn: 'root'
+providedIn: 'root'
 })
 export class AppServiceService {
 
-  readonly ROOT_URL;
+readonly ROOT_URL;
 
-  constructor(private http: HttpClient) {
+constructor(private http: HttpClient) {
     if(environment.production == false){
       this.ROOT_URL = 'test'
     }else{

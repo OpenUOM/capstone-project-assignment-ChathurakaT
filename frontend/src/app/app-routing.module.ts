@@ -9,16 +9,16 @@ import { TeacherTableComponent } from './components/teacher-table/teacher-table.
 
 
 const routes: Routes = [
-  { path: '', component: TeacherTableComponent },
-  { path: 'student', component: StudentTableComponent },
-  { path: 'addTeacher', component: AddNewTeacherComponent },
-  { path: 'addStudent', component: AddNewStudentComponent },
-  { path: 'editStudent', component: EditStudentComponent },
-  { path: 'editTeacher', component: EditTeacherComponent }
+{ path: '', component: TeacherTableComponent },
+{ path: 'student', component: StudentTableComponent },
+{ path: 'addTeacher', component: AddNewTeacherComponent },
+{ path: 'addStudent', component: AddNewStudentComponent },
+{ path: 'editStudent', component: EditStudentComponent },
+{ path: 'editTeacher', component: EditTeacherComponent }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
